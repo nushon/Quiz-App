@@ -1,0 +1,81 @@
+body{
+    text-align: center;
+    background-color: rgb(24, 23, 23);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/cslebasa.jpg);
+    /* background-color: black; */
+    /* background: -moz-linear-gradient(black, white); */
+    /* background: linear-gradient(black, white, black);
+    /* background-size: contain;  */
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(65, 191, 250, 0.712);
+    border-radius: 5px;
+    border: none;
+}
+li{
+    list-style: none;
+}
+#subj_opt{
+    width: 13%;
+    height: 35px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#number_opt{
+    width: 13%;
+    height: 35px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit_btn{
+    padding: 5px;
+    width: 60px;
+    margin: 0px 0px 0px 276px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+#sub_bar{
+    border: 2px solid black;
+    text-align: left;
+    width: 500px;
+}
+
+#btn:hover{
+    background-color: rgb(122, 183, 252);
+    color: white;
+    
+}
+#Question_bar{
+    display: none;
+}
+/* a:hover {
+    color: hotpink;
+} */
+
+/* label{} */
+#show_quest{
+    /* width: 50%; */
+    font-size: large;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    column-gap: 2%;
+    justify-content: center;
+    text-align: left;
+    /* background-color: beige; */
+    /* border: 2px solid black; */
+    /* background-color: aqua; */
+}
+
+/* #option{
+    background-color: aquamarine;
+} */
+

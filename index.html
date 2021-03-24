@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <style>
+        #show_opt{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2%;
+    background-color: aqua;
+    } -->
+    </style>
+</head>
+<body>
+    <div id="over_all">
+        <h1>Exercise Questions</h1>
+
+    <div id="Selection_bar">
+    
+    <select name="text" id="subj_opt">
+        <option value="Math" id="math_opt">
+            <h3>Mathematics</h3>
+        </option>
+        <option value="English" id="eng_opt">
+            <h3>English</h3>
+        </option>
+    </select>
+
+    <select name="number" id="number_opt" onchange="All_question()">
+        <option value="default" disabled selected id="qst_2">
+            Pic A Question
+        </option>
+        <option value="2" id="qst_2">
+            2
+        </option>
+        <option value="5" id="number_opt">
+            5
+        </option>
+        <option value="10" id="number_opt">
+            10
+        </option>
+    </select>
+    <br>
+    <br>
+
+    <!-- <button id="submit_btn" onclick=""><b>Submit</b></button> -->
+    </div>
+
+    <div id="Question_bar">
+        <div id="sub_bar">
+        <p id="scores">Socres:</p>
+        <p id="correct">Correct:</p>
+        <p id="wrong">Wrong:</p>
+        </div>
+<section>
+    <div id="show_quest">
+        
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        
+
+    </div>
+    
+    <button id="btn" onclick="checkAnswer()">Submit</button>
+</div>
+
+</div>
+
+</section>
+       
+
+    <script src="./script.js"></script>
+</body>
+</html>
