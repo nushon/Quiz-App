@@ -1,11 +1,7 @@
 body{
     text-align: center;
     background-color: rgb(24, 23, 23);
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/cslebasa.jpg);
-    /* background-color: black; */
-    /* background: -moz-linear-gradient(black, white); */
-    /* background: linear-gradient(black, white, black);
-    /* background-size: contain;  */
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./images/quiz3.jpeg);
     background-size: cover;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,21 +9,21 @@ body{
 #btn{
     width: 100px;
     height: 30px;
-    background-color: rgba(65, 191, 250, 0.712);
+    background-color: rgba(2, 22, 49, 0.705);
     border-radius: 5px;
     border: none;
 }
 li{
     list-style: none;
 }
-#subj_opt{
+.opt{
     width: 13%;
     height: 35px;
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#number_opt{
+#opt{
     width: 13%;
     height: 35px;
     font-size: x-large;
@@ -44,9 +40,17 @@ li{
 }
 
 #sub_bar{
-    border: 2px solid black;
-    text-align: left;
-    width: 500px;
+    /* border: 2px solid black; */
+    /* text-align: left; */
+    width: 30%;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+select{
+    background-color: rgba(2, 22, 49, 0.705);
+    color: white;
+    width: 50%;
 }
 
 #btn:hover{
@@ -56,6 +60,7 @@ li{
 }
 #Question_bar{
     display: none;
+    /* justify-items: center; */
 }
 /* a:hover {
     color: hotpink;
@@ -75,7 +80,28 @@ li{
     /* background-color: aqua; */
 }
 
-/* #option{
-    background-color: aquamarine;
-} */
+/* responsive part */
+@media only screen and (max-width: 375px) {
+    #show_quest {
+        grid-template-columns: 50% 50%;
+        column-gap: 3%;
+        justify-content: center;
+    }
+
+    body {
+        /* background-size: cover; */
+        height: 800px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .opt{
+        width: 30%;
+        height: 35px;
+    }
+
+  }
+
+  
+
 
