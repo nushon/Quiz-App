@@ -21,12 +21,12 @@ console.log(mydata[1][1].answer);
         for (keys in myoptions){
             console.log(`${keys}: ${myoptions}`)
         }
-        // myoptions.forEach((ele) => {
-        //     console.log(myoptions);
-        //     console.log(ele);
+        myoptions.forEach((ele) => {
+            console.log(myoptions);
+            console.log(ele);
 
 
-        // });
+        });
 
 
         var questionSheet = document.getElementById("show_quest").innerHTML+= `
@@ -59,32 +59,32 @@ function checkAnswer(){
     // console.log(document.querySelectorAll("label li input"));
     let getValue = document.querySelectorAll("label li input");
     console.log(getValue);
-// let answer = RadioNodeList.value;
+let answer = RadioNodeList.value;
 
-// if(answer === checked){
-//     console.log("Answer");
-// }
+ if(answer === checked){
+     console.log("Answer");
+ }
 
-    //  answerSelectionId = event.target.id;
-    // console.log(answerSelectionId);   
+      answerSelectionId = event.target.id;
+     console.log(answerSelectionId);   
     
-    // if(answerSelectionId === "opta"){
-    //     console.log("Answer A");
-    // }else if(answerSelectionId === "optb"){
-    //     console.log("Answer B");
-    // }else if(answerSelectionId === "optc"){
-    //     console.log("Answer C");
-    // }else if(answerSelectionId === "optd"){
-    //     console.log("Answer D");
-    // }
+     if(answerSelectionId === "opta"){
+         console.log("Answer A");
+     }else if(answerSelectionId === "optb"){
+         console.log("Answer B");
+     }else if(answerSelectionId === "optc"){
+         console.log("Answer C");
+     }else if(answerSelectionId === "optd"){
+         console.log("Answer D");
+     }
 }
 
-// function checkQuestion(){
-//     let score = document.getElementById("scores");
-//     let correct = document.getElementById("correct");
-//     let wrong = document.getElementById("wrong");
+ function checkQuestion(){
+     let score = document.getElementById("scores");
+     let correct = document.getElementById("correct");
+    let wrong = document.getElementById("wrong");
 
-//     if(ele[1].options.a === ele[1].question){
-//         console.log("Correct")
-//     }
-// }
+    if(ele[1].options.a === ele[1].question){
+        console.log("Correct")
+    }
+}
